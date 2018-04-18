@@ -3,7 +3,6 @@
     <card class='stripe-card'
       :class='{ complete }'
       stripe='pk_test_IngCLTu9rvg3MZGc40jmhaOc'
-      :options='stripeOptions'
       @change='complete = $event.complete'
     />
     <button class='pay-with-stripe' @click='pay' :disabled='!complete'>Pay with credit card</button>
